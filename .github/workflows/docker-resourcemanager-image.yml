@@ -15,4 +15,4 @@ jobs:
     steps:
     - uses: actions/checkout@v4
     - name: Build the Docker image
-      run: docker build . --file resourcemanager/Dockerfile --tag Hadoop:$(date +%s)
+      run: docker build . --file resourcemanager/Dockerfile --tag hadoop_resourcemanager:$(date +%s)
