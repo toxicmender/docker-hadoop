@@ -1,6 +1,4 @@
-FROM nginx
-
-MAINTAINER "Ivan Ermilov <mailto:ivan.s.ermilov@gmail.com>"
+FROM nginx:stable-bookworm
 
 COPY default.conf /etc/nginx/conf.d/default.conf
 COPY materialize.min.css /data/bde-css/materialize.min.css
